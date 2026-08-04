@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-black text-white min-h-screen flex flex-col items-center justify-center m-0;
+  }
+
+  a {
+    @apply text-cyan-400 font-semibold underline hover:text-cyan-300 transition-colors;
+  }
+}
+
+.yero-title {
+  @apply text-4xl font-extrabold text-cyan-400 mb-4 tracking-wider;
+}
