@@ -556,15 +556,11 @@ video {
 
 body {
   margin: 0px;
-  display: flex;
   min-height: 100vh;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: rgb(34 211 238 / var(--tw-text-opacity, 1));
 }
 
 a {
@@ -579,15 +575,119 @@ a {
 
 a:hover {
   --tw-text-opacity: 1;
-  color: rgb(103 232 249 / var(--tw-text-opacity, 1));
+  color: rgb(165 243 252 / var(--tw-text-opacity, 1));
 }
 
-.yero-title {
+.nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 50;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(34 211 238 / var(--tw-text-opacity, 1));
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.nav a {
+  --tw-text-opacity: 1;
+  color: rgb(34 211 238 / var(--tw-text-opacity, 1));
+  text-decoration-line: none;
+}
+
+.nav a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(165 243 252 / var(--tw-text-opacity, 1));
+}
+
+.page-layout {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  min-height: 100vh;
+  max-width: 64rem;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.news-panel {
+  width: 18rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+  padding: 1.5rem;
+}
+
+main {
+  flex: 1 1 0%;
+}
+
+main section {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 42rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mb-4 {
   margin-bottom: 1rem;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.hover\:text-cyan-400:hover {
   --tw-text-opacity: 1;
   color: rgb(34 211 238 / var(--tw-text-opacity, 1));
 }
