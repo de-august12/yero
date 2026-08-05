@@ -4,36 +4,88 @@
 
 @layer base {
   body {
-    @apply bg-white text-black min-h-screen m-0;
+    @apply bg-black
+           text-cyan-400
+           min-h-screen
+           m-0;
   }
 
   a {
-    @apply text-black font-semibold underline transition-colors duration-150;
+    @apply text-cyan-400
+           font-semibold
+           underline
+           transition-colors
+           duration-150;
   }
 
   a:hover {
-    @apply text-cyan-400;
+    @apply text-cyan-200;
   }
 
   .yero-title {
-    @apply text-4xl font-extrabold text-black mb-4 tracking-wide;
+    @apply text-4xl
+           font-extrabold
+           text-cyan-400
+           mb-4
+           tracking-wide;
   }
 }
 
 @layer components {
-  nav {
-    @apply fixed top-0 left-0 w-full bg-white p-4 flex gap-4 shadow-md z-50 font-sans;
+  .nav {
+    @apply fixed
+           top-0
+           left-0
+           w-full
+           flex
+           items-center
+           justify-center
+           gap-6
+           px-6
+           py-3
+           bg-gray-900
+           text-cyan-400
+           z-50
+           shadow-md;
+  }
+
+  .nav a {
+    @apply text-cyan-400
+           no-underline
+           hover:text-cyan-200;
+  }
+
+  .page-layout {
+    @apply max-w-5xl
+           mx-auto
+           px-6
+           pt-32
+           pb-20
+           flex
+           flex-row
+           items-start
+           gap-8
+           min-h-screen;
+  }
+
+  .news-panel {
+    @apply bg-gray-900
+           rounded-xl
+           p-6
+           w-72
+           flex-shrink-0;
   }
 
   main {
-    @apply max-w-7xl mx-auto px-6 py-20 flex gap-8;
-  }
-
-  aside {
-    @apply w-64 flex-shrink-0;
-  }
-
-  section {
     @apply flex-1;
+  }
+
+  main section {
+    @apply flex
+          flex-col
+          items-center
+          text-center
+          max-w-2xl
+          mx-auto;
   }
 }

@@ -5,48 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YERO - Young European Radio Operators</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/output.css">
 </head>
 <body>
-    <nav>
-        <img src="favicon.ico" alt="YERO Logo" style="width: 32px; height: 32px;">
-        <a href="index.html">Main</a>
-        <a href="about.html"> About Us</a>
-        <a href="propogation.html" > Propogation </a>
-        <a href="https://discord.gg/KD24Sb3MV">Discord</a>
-        <a href="news.html">News</a> 
+    <nav class="nav">
+        <img src="favicon.ico" alt="YERO Logo" class="w-8 h-8">
+        <a href="index.html" class="hover:text-cyan-400">Main</a>
+        <a href="about.html" class="hover:text-cyan-400">About Us</a>
+        <a href="propagation.html" class="hover:text-cyan-400">Propagation</a>
+        <a href="https://discord.gg/KD24Sb3MV" class="hover:text-cyan-400">Discord</a>
+        <a href="news.html" class="hover:text-cyan-400">News</a>
     </nav>
 
-    <main>
-        <news>
-            <br> </br>
-            <b> TODAY - 4th August </b>
-            <b> Bibi DX Commander got arrested!</b>
-            <br> </br>
-            <b> YESTERDAY - 3th August</b>
-            <b> ARRL Leadership debates and SWL Surveys!</b>
-            <br> </br>
-            <b> 4
-            <b> 2th August </b>
-            <b> news or something idfk iwjdrgjwropg</b>
-            <br> </br>
-            <b> 1th August </b>
-            <b> you get the jist </b>
-        </news>
+    <div class="page-layout">
+        <aside class="news-panel">
+            <h2 class="text-xl font-bold mb-4">Latest News</h2>
+            <ul class="flex flex-col gap-4">
+                <li>
+                    <span class="news-tag-new">Today</span>
+                    <p class="mt-1"><strong>4th August</strong> — Bibi DX Commander got arrested!</p>
+                </li>
+                <li>
+                    <span class="news-tag-event">Yesterday</span>
+                    <p class="mt-1"><strong>3rd August</strong> — ARRL leadership debates and SWL surveys!</p>
+                </li>
+                <li>
+                    <span class="news-tag-update">Update</span>
+                    <p class="mt-1"><strong>2nd August</strong> — news or something idk</p>
+                </li>
+                <li>
+                    <span class="news-tag-update">Update</span>
+                    <p class="mt-1"><strong>1st August</strong> — you get the jist</p>
+                </li>
+            </ul>
+        </aside>
 
-        <section>
-            <h1>Young European Radio Operators</h1>
-            <h2>What is YERO?</h2>
-            <p>
-                YERO (Young European Radio Operators) is a community for
-                european (english as a language is preferred but not required) radio operators. You can apply to join using
-                our Discord server.
-            </p>
-            <p>
-                Join us on
-                <a href="https://discord.gg/KD24Sb3MV">Discord</a>.
-            </p>
-        </section>
-    </main>
+        <main>
+            <section>
+                <h1>Young European Radio Operators</h1>
+                <h2>What is YERO?</h2>
+                <p>
+                    YERO (Young European Radio Operators) is a community for
+                    European (English as a language is preferred but not required) radio operators. You can apply to join using
+                    our Discord server.
+                </p>
+                <p>
+                    Join us on
+                    <a href="https://discord.gg/KD24Sb3MV">Discord</a>.
+                </p>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
