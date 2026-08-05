@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YERO - Live Propagation</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <img src="favicon.ico" alt="YERO Logo" style="width:32px;height:32px;">
+    <a href="index.html">Main</a>
+    <a href="about.html">About Us</a>
+    <a href="propagation.html">Propagation</a>
+    <a href="news.html">News</a>
+    <a href="https://discord.gg/KD24Sb3MV">Discord</a>
+</nav>
+
+<main>
+
+<section>
+
+<h1 class="yero-title">
+    Live Propagation Dashboard
+</h1>
+
+<p>
+Live amateur radio conditions, solar activity and band status.
+</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+
+<div class="border rounded-xl p-6 shadow">
+
+<h2 class="text-2xl font-bold mb-4">
+Solar Conditions
+</h2>
+
+<p>
+Solar Flux Index:
+<span id="sfi">loading</span>
+</p>
+
+<p>
+K Index:
+<span id="kindex">loading</span>
+</p>
+
+<p>
+A Index:
+<span id="aindex">loading</span>
+</p>
+
+<p>
+Sunspots:
+<span id="sunspots">loading</span>
+</p>
+
+<button onclick="loadPropagation()"
+class="mt-4 border px-4 py-2 rounded">
+Refresh
+</button>
+
+</div>
+
+
+<div class="border rounded-xl p-6 shadow">
+
+<h2 class="text-2xl font-bold mb-4">
+Band Conditions
+</h2>
+
+<div id="bands">
+loading
+</div>
+
+</div>
+
+
+<div class="border rounded-xl p-6 shadow">
+
+<h2 class="text-2xl font-bold mb-4">
+Greyline
+</h2>
+
+<p>
+Map integration coming soon.
+</p>
+
+</div>
+
+
+<div class="border rounded-xl p-6 shadow">
+
+<h2 class="text-2xl font-bold mb-4">
+DX Cluster
+</h2>
+
+<div id="dxcluster">
+loading
+</div>
+
+</div>
+
+
+<div class="border rounded-xl p-6 shadow">
+
+<h2 class="text-2xl font-bold mb-4">
+UTC Time
+</h2>
+
+<p id="utc">
+loading
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="js/propagation.js"></script>
+
+</body>
+</html>
