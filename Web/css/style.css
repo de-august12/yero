@@ -4,14 +4,36 @@
 
 @layer base {
   body {
-    @apply bg-black text-white min-h-screen flex flex-col items-center justify-center m-0;
+    @apply bg-white text-black min-h-screen m-0;
   }
 
   a {
-    @apply text-cyan-400 font-semibold underline hover:text-cyan-300 transition-colors;
+    @apply text-black font-semibold underline transition-colors duration-150;
+  }
+
+  a:hover {
+    @apply text-cyan-400;
+  }
+
+  .yero-title {
+    @apply text-4xl font-extrabold text-black mb-4 tracking-wide;
   }
 }
 
-.yero-title {
-  @apply text-4xl font-extrabold text-cyan-400 mb-4 tracking-wider;
+@layer components {
+  nav {
+    @apply fixed top-0 left-0 w-full bg-white p-4 flex gap-4 shadow-md z-50 font-sans;
+  }
+
+  main {
+    @apply max-w-7xl mx-auto px-6 py-20 flex gap-8;
+  }
+
+  aside {
+    @apply w-64 flex-shrink-0;
+  }
+
+  section {
+    @apply flex-1;
+  }
 }
